@@ -61,6 +61,8 @@ body {
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
+
+    
 }
 
 .flex-wrap-container{
@@ -608,7 +610,7 @@ footer {
 }
 
 .list-project-examples > .item  .content {
-    margin: 20px 0px 20px 24px;
+    padding: 20px 24px;
     text-align: left;
 }
 

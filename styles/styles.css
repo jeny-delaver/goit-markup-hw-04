@@ -32,15 +32,15 @@ img{
 
 .list {
     list-style: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .title {
     color: var(--title-text-color);
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     
 }
 
@@ -166,10 +166,10 @@ img{
     height: 16px;
 }
 
-footer {
+.footer {
     background-color: var(--second-bg-color);
 
-    padding: 60px 0px;
+    padding: 60px 0;
 }
 
 .logo-footer {
@@ -204,18 +204,21 @@ footer {
     color: var(--footer-link-color);
 }
 
-.flex-container{
+.footer-container{
     display: flex;
 }
 
-.link-container{
-    margin-left: 75px;
-    margin-top: 12px;
-
+.footer-container > .margin-container:not(:last-child) {
+    margin-right: 70px;
 }
 
-.link-title {
-    color: #ffffff;
+.link-container{
+    margin-top: 12px;
+}
+
+.join {
+    display: inline-block;
+    color: var(--primary-white-color);
 
     font-size: 14px;
     line-height: 16px;
@@ -277,7 +280,7 @@ footer {
 
     text-align: center;
 
-    padding: 200px 0px;
+    padding: 200px 0;
 }
 
 .hero-title {
@@ -291,11 +294,11 @@ footer {
     text-transform: uppercase;
     
     width: 696px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    /* margin: 0px auto 30px auto; */
+    /* margin: 0 auto 30px auto; */
 }
 
 .hero-button {
@@ -310,7 +313,7 @@ footer {
     padding: 10px 32px;
     border-radius: 4px;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -331,12 +334,15 @@ footer {
 }
 
 .list-advantages .icon-container-advantages{
-    background-color: #F5F4FA;
+    background-color: var(--third-bg-color);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    padding: 25px 100px;
+    
 }
 
 .list-advantages .icon-advantages{
@@ -360,15 +366,15 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* SECTION COMPETENCE */
 
 .competence {
     background-color: var(--primary-bg-color);
-    padding: 94px 0px;
+    padding: 94px 0;
 }
 
 .list-competence {
@@ -385,7 +391,7 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
     
-    /* margin-top: 0px; */
+    /* margin-top: 0; */
     margin-bottom: 50px;
 
 }
@@ -394,7 +400,7 @@ footer {
 
 .team {
     background-color: var(--third-bg-color);
-    padding: 94px 0px;
+    padding: 94px 0;
 }
 
 .list-team{
@@ -409,8 +415,8 @@ footer {
     background-color: var(--primary-bg-color);
     width: 270px;
 
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
    
 }
 
@@ -423,6 +429,11 @@ footer {
     margin-bottom: 50px;
 }
 
+.member-container{
+    padding: 30px 32px;
+}
+
+
 .member-title {
     font-weight: 500;
     font-size: 16px;
@@ -431,7 +442,6 @@ footer {
     letter-spacing: 0.03em;
 
     margin-bottom: 10px;
-    margin-top: 30px;
 }
 
 .member-description {
@@ -440,7 +450,7 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 16px;
 }
 
@@ -448,18 +458,20 @@ footer {
 
     display: flex;
     justify-content: space-around;
-    margin: 0px 32px 30px 32px;
+    
 }
 
 
 .icon-list a{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px; 
 
     color: var(--border-svg-color);
     border-radius: 50%;
-    padding: 12px;
+    
 }
 
 .icon-list .icon{
@@ -478,7 +490,7 @@ footer {
 /* SECTION CLIENTS */
 
 .clients{
-    padding: 94px 0px;
+    padding: 94px 0;
 }
 
 .clients-title{
@@ -491,8 +503,10 @@ footer {
 
 .list-clients{
     display: flex;
-    width: 1170px;
-    justify-content: space-between;
+}
+
+.list-clients .item:not(:last-child){
+    margin-right: 30px;
 }
 
 .client-link{
@@ -559,7 +573,7 @@ footer {
 
 .projects {
     background-color: var(--primary-bg-color);
-    padding: 94px 0px;
+    padding: 94px 0;
 }
 
 .list-projects{
@@ -593,7 +607,7 @@ footer {
 .list-projects button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -643,6 +657,6 @@ footer {
 
 .list-project-examples .example-link:hover,
 .list-project-examples .example-link:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
